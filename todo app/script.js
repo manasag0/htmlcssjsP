@@ -7,5 +7,5 @@ const newListItem= document.createElement('li')
 
 function addTodo(newItemText){
     newListItem.textContent = newItemText;
-    list.appendChild(newListItem);
+    list.appendChild(newListItem);    
 }

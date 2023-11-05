@@ -20,13 +20,12 @@ form{
 
 }
 input{
-    border-radius: 2px;
+    border-radius: 33px;
     border-style: hidden;
     background-color: white;
     height: 50px;
     width: auto;
     border-radius: 6px;
-    color: #e0e1e9;
 
 }
 
@@ -34,12 +33,12 @@ input{
 button{
     cursor: pointer;
     background-color: yellowgreen;
-
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 800;
 }
 button:hover{
     border: 0px;
-    height: 40px;
-    width: auto;
-    padding: 5px;
-    color: rgba(22, 188, 49, 1);
+    color:#fff;
 }

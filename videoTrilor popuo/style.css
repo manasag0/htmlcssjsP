@@ -12,5 +12,93 @@ body{
     margin: 0px;
     padding: 0px;
     height: 100vh;
-    background-color: #10ceaf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
 }
+.container{
+    max-width: 550px;
+    padding: 10px;
+}
+
+.container img{
+    max-width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.container h1{
+    color: #fff;
+    font-weight: 500;
+
+}
+
+.container p{
+    color: white;
+    margin: 15px 0;
+}
+
+button{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 1;
+    transition: opacity 0.7s;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+.trailer-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    transform: translate(-50%,-50%);
+}
+.active.trailer-container{
+    visibility: hidden;
+    opacity: 0;
+}
+.trailer-container video{
+    position: relative;
+    max-width: 900px;
+    outline: none;
+    
+}
+.close-icon{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.7s;
+}
+@media screen and (max-width: 678px) {
+    .container{
+        max-width: 80%;
+        align-items: center;
+    }
+    .trailer-container video {
+      max-width: 400px;
+    }
+    img{
+        width: 100%;
+    }
+    .close-icon{
+text-align: center;
+    }
+  }
+  
+ 

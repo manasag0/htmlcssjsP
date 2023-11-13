@@ -13,4 +13,32 @@ body{
     padding: 0px;
     height: 100vh;
     background-color: #10ceaf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.container{
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.5); /* Red background with 50% opacity */
+    /* displa?y: flex; */
+    /* flex-direction: column; */
+    /* align-items: ?center;; */
+    /* justify-content: space-aro?und; */
+    border-radius: 5px;
+  
+}
+.temp-container{
+    margin: 15px 0;
+}
+input{
+    border: none;
+    padding: 10px;
+    background-color: #10ceaf;
+    border-radius: 5px;
+}
+.input{
+    float: right;
+    outline: none;
 }

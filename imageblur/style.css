@@ -11,6 +11,25 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding: 0px;
-    height: 100vh;
-    background-color: #10ceaf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bg{
+    background: url('https://i.pinimg.com/736x/48/cb/3f/48cb3fa2718660a78a7b0f16ed406f95--aqua-rose-turquoise-rose.jpg') no-repeat center center/cover;
+    /* position: absolute; */
+    top:30px;
+    left: 30px;
+    z-index: -1;
+    height: calc(100vh+60px);
+    width: calc(100vw+60px);
+    filter: blur(10px);
+    background-size: cover;
+    object-fit: cover;
+
+}
+.text-load{
+    font-size: 50px;
+    /* color: #fff; */
 }

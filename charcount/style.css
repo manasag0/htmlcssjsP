@@ -13,4 +13,7 @@ body{
     padding: 0px;
     height: 100vh;
     background-color: #10ceaf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

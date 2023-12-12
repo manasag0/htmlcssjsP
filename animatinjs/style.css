@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Setting a fixed width for the container */
+  }
+  
+  .item {
+    border: 1px solid black;
+    margin: 5px;
+    flex-shrink: 1; /* All items have the same shrink factor */
+    flex-basis: 500px; /* Initial size of each item */
+  }
+  

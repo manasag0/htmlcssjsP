@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
+
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center
+}
+.calculator{
+    background: #bac9df;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.1), 5px 5px  15px rgba(0,0,0,0.2);
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.1), 5px 5px  15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #585656;
+    cursor: pointer;
+    margin: 6px;
+    font-weight: bold;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin:  16px 0;
+    cursor: default !important;
+    font-size: bold;
+}
+form .display input[type='text']{
+    text-align:  right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    font-weight: bolder;
+}
+.calculator form .namend{
+    width: 135px;
+}

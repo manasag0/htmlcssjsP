@@ -1,0 +1,68 @@
+/* Add these styles to your existing CSS */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  background-color: #10ceaf;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+  width: 90%;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  max-width: 630px;
+  width: 100%;
+  background-color: orange;
+  border: 10px solid rgba(7, 7, 225, 0.826);
+  margin: 20px auto;
+  padding: 5px;
+}
+
+.tile {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+#winner {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  height: 10vh;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  #board {
+    max-width: 90vw;
+  }
+
+  .tile {
+    height: 40px;
+    width: 40px;
+  }
+}

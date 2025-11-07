@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #10ceaf;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-input {
+  width: 350px;
+  height: 48px;
+  color: black !important;
+  border: none;
+  font-size: large;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.add-btn {
+  right: 16px;
+  top: 16px;
+  color: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(23, 23, 23, 0.552);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  height: 48px;
+  width: 80px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-image: linear-gradient(160deg, #ff7b29, #ffffff);
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-image: linear-gradient(80deg, #ffffff, #f28f51ca);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.todo:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item {
+  flex-grow: 1;
+}
+
+.complete-btn,
+.edit-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.completed .todo-item {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.fall {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+/* Add some styling for the icons */
+.fa-check,
+.fa-edit,
+.fa-trash {
+  color: #333;
+  cursor: pointer;
+}
+.todo-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .todo-container {
+    width: 100%;
+  }
+}
